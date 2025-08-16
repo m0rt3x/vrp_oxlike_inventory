@@ -1,0 +1,2 @@
+-- Opcional: aqui você pode persistir cofres em DB
+-- Por padrão, o server.lua mantém na memória.

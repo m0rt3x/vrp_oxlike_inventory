@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inventário (vRP)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app" class="container hidden">
+    <div class="inv">
+      <div class="header">
+        <h1>Inventário</h1>
+        <button id="closeBtn">×</button>
+      </div>
+      <div class="bars">
+        <div><span>Peso:</span> <span id="weight">0 / 0</span></div>
+      </div>
+      <div class="grid" id="playerGrid"></div>
+      <div class="actions">
+        <input id="amount" type="number" min="1" placeholder="Qtd" />
+        <button id="useBtn">Usar</button>
+        <button id="dropBtn">Dropar</button>
+        <input id="target" type="number" min="1" placeholder="ID alvo" />
+        <button id="giveBtn">Dar</button>
+      </div>
+    </div>
+
+    <div class="shop hidden" id="shop">
+      <div class="header">
+        <h1 id="shopTitle">Loja</h1>
+        <button id="closeShop">×</button>
+      </div>
+      <div class="grid" id="shopGrid"></div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
